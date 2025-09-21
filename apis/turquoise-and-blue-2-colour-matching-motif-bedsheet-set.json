@@ -1,0 +1,26 @@
+{
+    "id": "840d7408-0788-4e63-9614-d4d6d16de575",
+    "name": "Turquoise and blue 2 colour matching motif bedsheet set",
+    "slug": "turquoise-and-blue-2-colour-matching-motif-bedsheet-set",
+    "description": "Our bedsheets are 100% cotton and hand-block printed. We have 3 sizes available.",
+    "price": "2900.00",
+    "originalPrice": "3250.00",
+    "categoryId": "27b27101-d639-4aa9-bafd-d530a42ec7cb",
+    "images": [
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400",
+      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
+    ],
+    "sizes": [
+      "Single",
+      "Double",
+      "King"
+    ],
+    "colors": [
+      "Turquoise",
+      "Blue"
+    ],
+    "inStock": true,
+    "featured": true,
+    "rating": "4.5",
+    "reviewCount": 2
+  },
