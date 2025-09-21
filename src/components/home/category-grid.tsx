@@ -1,10 +1,15 @@
 import { useQuery } from "@tanstack/react-query";
 import { Category } from "@/types/product";
 import { Link } from "wouter";
-
+import axios from "axios";
 export function CategoryGrid() {
   const { data: categories = [], isLoading } = useQuery<Category[]>({
     queryKey: ["/api/categories"],
+    queryFn: async () => {
+      const res = await axios.get("https://raw.githubusercontent.com/AjayKumar59/eCom-demo/main/apis/categories.json"); // static API call
+      console.log('res=---',res)
+      return res.data;
+    },
   });
 
   if (isLoading) {

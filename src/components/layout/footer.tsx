@@ -174,7 +174,7 @@ export function Footer() {
         
         <div className="border-t border-secondary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-secondary-foreground opacity-80" data-testid="footer-copyright">
-            &copy; 2025 Namya Living. All rights reserved. | Made with ❤️ in India | Developed ❤️ by Ajay Bhardwaj | <a href="https://github.com/ajaykumar59" className="text-secondary-foreground hover:text-white transition-colors">Github </a>
+            &copy; 2025 Namya Living. All rights reserved. | Made with ❤️ in India | Developed ❤️ by <a href="https://github.com/ajaykumar59" className="text-secondary-foreground hover:text-white transition-colors">Ajay Bhardwaj </a>
           </p>
         </div>
       </div>

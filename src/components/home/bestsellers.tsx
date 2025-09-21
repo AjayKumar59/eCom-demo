@@ -3,11 +3,17 @@ import { Product } from "@/types/product";
 import { ProductGrid } from "@/components/product/product-grid";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import axios from "axios";
 
 export function Bestsellers() {
   const { data: products = [], isLoading } = useQuery<Product[]>({
     queryKey: ["/api/products", { featured: true }],
-    queryFn: () => fetch("/api/products?featured=true").then(res => res.json()),
+    queryFn: async () => {
+      const res = await axios.get("https://raw.githubusercontent.com/AjayKumar59/eCom-demo/main/apis/products.json"); // static API call
+      // console.log('res=---',res)
+      return res.data;
+    },
+    // queryFn: () => fetch("/api/products?featured=true").then(res => res.json()),
   });
 
   if (isLoading) {
